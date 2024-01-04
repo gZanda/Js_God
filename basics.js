@@ -25,7 +25,10 @@ console.log(num2);
 // Useful String Methods
 
 let str = 'Hello World';
+let noTrim = '    Hello World    ';
 console.log(str.length);
+console.log(str.charAt(0));
+console.log(noTrim.trim());
 console.log(str.indexOf('World'));
 console.log(str.slice(0,5));
 console.log(str.replace('World', 'Zanda'));
@@ -34,7 +37,8 @@ console.log(str.toLowerCase());
 
 // Get User Input ( With event listener )
 
-function getUserInput() {
+function getUserInput(){
+
     let input = document.getElementById('userInput').value;
     console.log(input);
     alert("Your input: " + input);
@@ -42,3 +46,17 @@ function getUserInput() {
 }
 
 document.getElementById('submitButton').addEventListener('click', getUserInput); 
+
+// 
+
+function checkInput(){
+
+    if(document.getElementById("myChekbox").checked){
+        alert("Checked");
+    } 
+    else {
+        alert("Not Checked");
+    }
+}
+
+document.getElementById('myCheckButton').addEventListener('click', checkInput);
