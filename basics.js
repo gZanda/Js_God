@@ -35,6 +35,22 @@ console.log(str.replace('World', 'Zanda'));
 console.log(str.toUpperCase());
 console.log(str.toLowerCase());
 
+// Arrow Functions ( Functions that  you'll use only once )
+
+const hello = () => {
+    console.log('Hello :3');
+}
+hello();
+
+const hello2 = (name) => {
+    console.log('Hello ' + name);
+}
+hello2('Zanda');
+
+setTimeout( () => {
+    console.log('Hello after 3 seconds');
+}, 3000);
+
 // Get User Input ( With event listener )
 
 function getUserInput(){
@@ -47,7 +63,7 @@ function getUserInput(){
 
 document.getElementById('submitButton').addEventListener('click', getUserInput); 
 
-// 
+// Verifying User Input ( With event listener )
 
 function checkInput(){
 
