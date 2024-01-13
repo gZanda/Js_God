@@ -51,6 +51,19 @@ setTimeout( () => {
     console.log('Hello after 3 seconds');
 }, 3000);
 
+// Async / Await Functions ( When you need to wait for something to happen ) - ( needs a promise )
+
+async function fetchData() {
+    try {
+        const response = await fetch('https://api.example.com/data');
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log('Error:', error);
+    }
+}
+
+
 // Get User Input ( With event listener )
 
 function getUserInput(){
